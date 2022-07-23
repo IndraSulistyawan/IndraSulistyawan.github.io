@@ -15,53 +15,43 @@ hideBar.forEach(function(element){
     })
 })
 
-// Caraousel
-const imgs = document.getElementById('imgs')
-const leftBtn = document.getElementById('left')
-const rightBtn = document.getElementById('right')
+//script untuk menghubungkan ke google sheet
+const scriptURL = 'https://script.google.com/macros/s/AKfycbye8DHiLVxm_kdczMSSoIFcfsmJxUAeil3FknLhMg_Igg2cBvuwVX5RNe0eGqFDR-7I/exec'
+        const form = document.forms['submit-to-google-sheet']
 
-const img = document.querySelectorAll('#imgs img')
-
-let idx = 0
-
-// let interval = setInterval(run, 2000)
+        
 
 
-function run() {
-    idx++
-    changeImage()
+
+        
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                console.log('Success!', response)
+                alert("Pesan Berhasil Dikirimkan")
+                const sending = document.getElementById('sending').innerHTML = "Submit"
+                setTimeout(function(){
+                    window.location.reload();
+                },4000)
+
+            })
+            .catch(error => {console.error('Error!', error.message)
+                alert("Pesan Gagal Dikirim")
+                setTimeout(function(){
+                    window.location.reload();
+                },3000)
+            })
+        })
+
+
+function mengirim(){
+    const sending = document.getElementById('sending')
+    sending.innerHTML = "Sending";
+    sending.style.padding = "10px 15px";
+
 }
-
-function changeImage() {
-    if(idx > img.length - 1){
-        idx = 0
-    }else if(idx < 0){
-        idx = img.length - 1
-    }
-
-    //imgs -> stylecss -> transform: translateX $idx(nama var) | {perhitungan}
-    imgs.style.transform = `translateX(${-idx * 500}px)`
-
-}
-
-function resetInterval(){
-    clearInterval(interval)
-    interval = setInterval(run, 2000)
-}
-
-rightBtn.addEventListener('click', () => {
-    idx ++ 
-    changeImage()
-    resetInterval()
-    console.log('kanan')
-})
-
-leftBtn.addEventListener('click', () =>{
-    idx--
-    changeImage()
-    resetInterval()
-    console.log('kiri')
-})
 
 
 
