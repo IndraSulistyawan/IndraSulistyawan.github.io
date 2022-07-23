@@ -146,34 +146,43 @@ header nav .sidebar li a:hover{
   font-size: var(--big-header);
   color: var(--font-on-primary);
 }
-#contact .kontek label{
-  margin-left: 210px;
+#contact .kontek .massage{
+    margin-left: 180px ;
+}
+#contact .kontek .massage .forse{
+    margin-top: 15px;
+    
+}
+#contact .kontek .massage .forse label{
+  margin-left: 5px;
   font-size: 2.5vh;
   font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: -10px;
   color: var(--font-on-primary);
 }
-#contact .kontek input[type=text] {
+#contact .kontek .massage .forse input[type=text] {
   padding:10px;
   border:0;
   border-radius:10px;
+  margin: 8px 0;
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
-  width: 60%;
+  width: 80%;
   align-self: center;
 }
-#contact .kontek input:focus{
-  outline: none;
+#contact .kontek .massage .forse input:focus{
+    outline: none;
 }
-#contact .kontek textarea {
-  width:60%;
-  resize: vertical;
-  padding:15px;
-  border-radius:15px;
-  border:0;
-  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
-  height:150px;
-  align-self: center;
+#contact .kontek .massage .forse textarea {
+    width:80%;
+    resize: vertical;
+    padding:15px;
+    border-radius:15px;
+    border:0;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+    height:150px;
+    align-self: center;
+}
+#contact .kontek .massage .forse textarea:focus{
+    outline: none;
 }
 #contact .kontek button{
   /* box-sizing: border-box; */
@@ -187,10 +196,10 @@ header nav .sidebar li a:hover{
   text-align: left;
   letter-spacing: .5px;
   line-height: 1.15;
-  width: 80px;
+  width: 100px;
   height: 50px;
-  padding: 5px 12px;
-  margin: 20px 210px;
+  padding: 5px 20px;
+  margin: 20px 5px;
   }
   button:focus {
   outline: 0;
@@ -335,18 +344,21 @@ footer .container p{
     margin-left: 50px;
     margin: 30px;
     }
-    #contact .kontek label{
-        margin-left: 50px;
+    #contact .kontek .massage{
+        margin-left: 90px;
+    }
+    #contact .kontek .massage label{
+        /* margin-left: 80px; */
         font-size: var(--smal-header);
     }
-    #contact .kontek input[type=text] {
+    #contact .kontek .massage input[type=text] {
         width: 80%;
         padding:10px;
         border:0;
         border-radius:10px;
         box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
     }
-    #contact .kontek textarea {
+    #contact .kontek form textarea {
         width: 80%;
         resize: vertical;
         padding:15px;
@@ -355,8 +367,8 @@ footer .container p{
         box-shadow:4px 4px 10px rgba(0,0,0,0.06);
         height:150px;
       }
-      #contact .kontek button{
-        margin: 15px 50px;
+      #contact .kontek  button{
+        margin: 15px 0;
         border: 3px solid white;
         font-size: 15px;
       }    
