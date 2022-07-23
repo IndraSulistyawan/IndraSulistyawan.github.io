@@ -81,7 +81,7 @@ header nav .sidebar li a:hover{
     margin-bottom: -2px;
 }
 .house{
-    margin-top: 170px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -101,7 +101,7 @@ header nav .sidebar li a:hover{
 #about h2{
     text-align: center;
     font-size: var(--big-header);
-    padding-top: 50px;
+    padding-top: 70px;
 }
 #about .bout{
     display: flex;
@@ -110,9 +110,10 @@ header nav .sidebar li a:hover{
 #about .bout .lead{
     display: inline-block;
     box-sizing: border-box;
-    text-align: justify;
+    text-align: center;
     margin: 20px;
     font-size: var(--para-content);
+    margin-bottom: 40px;
 }
 /* flexbox tanpa flex */
 
@@ -382,7 +383,7 @@ footer .container p{
     margin: 30px;
     }
     #contact .kontek label{
-        margin-left: 60px;
+        margin-left: 50px;
         font-size: var(--smal-header);
     }
     #contact .kontek input[type=text] {
@@ -402,7 +403,7 @@ footer .container p{
         height:150px;
       }
       #contact .kontek button{
-        margin: 15px 60px;
+        margin: 15px 50px;
         border: 3px solid white;
         font-size: 15px;
       }    
