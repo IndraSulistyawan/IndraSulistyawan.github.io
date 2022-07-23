@@ -74,6 +74,10 @@ header nav .sidebar li a:hover{
 
 
 
+
+
+
+
 /* section Home */
 #home{
     background-color: var(--primary-color);
@@ -120,57 +124,6 @@ header nav .sidebar li a:hover{
 
 
 /* akhir section about */
-
-
-
-/* section project */
-/* #project{
-    margin: 50px 0
-}
-
-
-#project .carousel img {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-  }
-
-.carousel {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    height: 530px;
-    width: 500px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-  
-.image-container {
-    display: flex;
-    transform: translateX(0);
-    transition: transform 0.5s ease-in-out;
-}
-  
-.buttons-container {
-    display: flex;
-    justify-content: space-between;
-}
-  
-  .btn {
-    background-color: rebeccapurple;
-    color: #fff;
-    border: none;
-    padding: 0.5rem;
-    cursor: pointer;
-    width: 49.5%;
-  }
-  
-  .btn:hover {
-    opacity: 0.9;
-  }
-  
-  .btn:focus {
-    outline: none;
-  } */
-/* akhir section project */
 
 
 
