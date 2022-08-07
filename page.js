@@ -30,18 +30,18 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbye8DHiLVxm_kdczMSSoI
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
                 console.log('Success!', response)
-                alert("Pesan Berhasil Dikirimkan")
+                displayModalSucces()
                 const sending = document.getElementById('sending').innerHTML = "Submit"
-                setTimeout(function(){
-                    window.location.reload();
-                },4000)
+                // setTimeout(function(){
+                //     window.location.reload();
+                // },4000)
 
             })
             .catch(error => {console.error('Error!', error.message)
                 alert("Pesan Gagal Dikirim")
-                setTimeout(function(){
-                    window.location.reload();
-                },3000)
+                // setTimeout(function(){
+                //     window.location.reload();
+                // },3000)
             })
         })
 
@@ -53,6 +53,32 @@ function mengirim(){
 
 }
 
+
+// modal
+
+
+function displayModalSucces(){
+    const modal = document.getElementById('modal')
+    modal.innerHTML += 
+    '<h1>Selamat</h1><p>pesan berhasil Terkirim</p><button type="button" id="close-modal">Okay</button>'
+modal.style.display = 'block'
+const modalbutton = document.getElementById('close-modal')
+
+ modalbutton.addEventListener('click', () => {
+ modal.style.display = 'none'
+})
+}
+function displayModalFailed(){
+    const modal = document.getElementById('modal')
+    modal.innerHTML += 
+    '<h1>GAGAL</h1><p>pesan tidak Terkirim</p><button type="button" id="close-modal">Okay</button>'
+modal.style.display = 'block'
+const modalbutton = document.getElementById('close-modal')
+
+ modalbutton.addEventListener('click', () => {
+ modal.style.display = 'none'
+})
+}
 
 
 
