@@ -153,6 +153,69 @@ $fontcolor: #d8d8b9;
           }
         }
       }
+      #skill {
+        margin: 60px auto;
+        .spesialist {
+          width: 80%;
+          position: relative;
+          .icon-skill {
+            max-width: 60px;
+            max-height: 60px;
+            margin: 10px auto;
+          }
+          .barside{
+            
+            .spacebar{
+              height: 15px;
+              width: 100%;
+              .fillbar{
+                p{
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+      #contact {
+        box-sizing: border-box;
+        .kontek {
+          h2 {
+            margin-left: 50px;
+            margin: 30px;
+          }
+          .massage {
+            margin-left: 50px;
+          }
+          .massage label {
+            font-size: var(--smal-header);
+            input[type="text"] {
+              width: 80%;
+              padding: 10px;
+              border: 0;
+              border-radius: 10px;
+              box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+            }
+          }
+          form {
+            textarea {
+              width: 80%;
+              resize: vertical;
+              padding: 15px;
+              border-radius: 15px;
+              border: 0;
+              box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+              height: 150px;
+            }
+          }
+          button {
+            margin: 15px 0;
+            padding: 5px 20px;
+            border: 3px solid white;
+            font-size: 15px;
+          }
+        }
+      }
     }
   }
 }
