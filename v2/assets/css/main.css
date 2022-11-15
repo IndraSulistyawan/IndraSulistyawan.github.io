@@ -216,4 +216,84 @@ main #skill .spesialist .barside .spacebar .show {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+main #contact {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  font-family: "Poppins", sans-serif;
+}
+main #contact .kontek {
+  display: flex;
+  flex-direction: column;
+}
+main #contact .kontek h2 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.4rem;
+  color: white;
+}
+main #contact .kontek .massage {
+  margin-left: 180px;
+}
+main #contact .kontek .massage .forse {
+  margin-top: 15px;
+}
+main #contact .kontek .massage .forse .label {
+  margin-left: 5px;
+  font-size: 2.5vh;
+  font-weight: 700;
+  color: white;
+}
+main #contact .kontek .massage .forse input[type=text] {
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+  margin: 8px 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  width: 80%;
+  align-self: center;
+}
+main #contact .kontek .massage .forse input:focus {
+  outline: none;
+}
+main #contact .kontek .massage .forse textarea {
+  width: 80%;
+  resize: vertical;
+  padding: 15px;
+  border-radius: 15px;
+  border: 0;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+  height: 150px;
+  align-self: center;
+}
+main #contact .kontek .massage .forse textarea:focus {
+  outline: none;
+}
+main #contact .kontek button {
+  background-color: var(--primary-color);
+  border: 4px solid white;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  letter-spacing: 0.5px;
+  line-height: 1.15;
+  width: 100px;
+  height: 50px;
+  padding: 5px 20px;
+  margin: 20px 5px;
+}
+main #contact .kontek button:focus {
+  outline: 0;
+}
+main #contact .kontek button:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #0a46e4;
+}
+main #contact .kontek button:active {
+  background-color: #0039d7;
+  border-color: white;
 }/*# sourceMappingURL=main.css.map */
