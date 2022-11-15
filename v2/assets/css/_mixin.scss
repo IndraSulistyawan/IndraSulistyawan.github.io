@@ -1,0 +1,28 @@
+@mixin Posisi {
+  margin: 70px 120px;
+}
+@mixin mobilePosisi {
+  margin: 50px 40px;
+}
+@mixin overlayprojectsuit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: $primary-color, $alpha: 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+@mixin Bodylight {
+    background-color: $fontcolor;
+    color: $primary-color;
+    scroll-behavior: smooth;
+}
+

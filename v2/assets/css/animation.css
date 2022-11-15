@@ -1,0 +1,11 @@
+.testbar {
+  width: 70%;
+  height: 30px;
+  background-color: blue;
+  margin: 0 auto;
+  margin-top: 40px;
+  -webkit-animation-name: loadingBar;
+          animation-name: loadingBar;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}/*# sourceMappingURL=animation.css.map */

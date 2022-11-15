@@ -1,0 +1,166 @@
+@import "_mixin";
+
+$fontheader: 1.8em;
+$fontdesc: 1em;
+
+$primary-color: #191929;
+$navfontcolor: #d8d8b9;
+$fontcolor: #d8d8b9;
+// for  small screen with maximum width of 768px (mobile)
+@media only screen and (max-width: 768px) {
+  body {
+    // overflow: hidden;
+
+    header {
+      nav {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        .logo {
+          height: 50px;
+          width: 50px;
+        }
+        .sidebar {
+          z-index: 2;
+          display: flex;
+          transform: translateX(100%);
+          margin-top: -10px;
+          margin-right: 0;
+          width: 50%;
+          height: 110vh;
+          align-items: center;
+          position: fixed;
+          right: 0;
+          top: 0;
+          background-color: rgba($color: #20274e, $alpha: 0.7);
+          transition: transform 0.3s ease;
+          li {
+            position: relative;
+            display: flex;
+            margin-left: 25%;
+            flex-direction: column;
+            margin-top: -250px;
+            a {
+              font-size: 1.3em;
+              padding-left: 15px;
+              margin: 30px auto;
+            }
+            li:nth-child(1) {
+              margin-top: -100px;
+            }
+          }
+          .switch-btn {
+            height: 30px;
+            width: 80px;
+            border-radius: 15px;
+            background-color: $fontcolor;
+            position: absolute;
+            bottom: 80px;
+            left: 55px;
+            .circle {
+              height: 30px;
+              width: 30px;
+              border: 1px solid $navfontcolor;
+              border-radius: 50%;
+              background-color: $primary-color;
+              transform: translateX(0);
+              transition: transform 0.3s ease-in-out;
+              box-sizing: border-box;
+            }
+          }
+          .switch-btn.mode {
+            background-color: $primary-color;
+            .circle.mode {
+              transition: transform 0.3s ease-in-out;
+              background-color: $fontcolor;
+              border: 1px solid $primary-color;
+              transform: translateX(50px);
+            }
+          }
+        }
+        .sidebar.active {
+          transform: translateX(0%);
+          //   height: 100%;
+        }
+        .hamburger {
+          z-index: 3;
+          cursor: pointer;
+          margin-right: 10px;
+          display: block;
+          top: 10px;
+          right: 10px;
+          position: relative;
+        }
+        .hamburger.active .bar:nth-child(2) {
+          opacity: 0;
+        }
+        .hamburger.active .bar:nth-child(1) {
+          transform: translateY(9px) rotate(45deg);
+        }
+        .hamburger.active .bar:nth-child(3) {
+          transform: translateY(-9px) rotate(-45deg);
+        }
+        .bar {
+          display: block;
+          width: 35px;
+          height: 5px;
+          margin: 5px auto;
+          transition: all 0.3s ease-in-out;
+          background: $fontcolor;
+        }
+      }
+    }
+    main {
+      .jumbotron {
+        @include mobilePosisi();
+        .main-text {
+          h1 {
+            font-size: $fontheader;
+          }
+          p {
+            font-size: $fontdesc;
+          }
+        }
+        .main-img {
+          img {
+            display: none;
+          }
+        }
+      }
+      .about {
+        @include mobilePosisi();
+        h1 {
+          font-size: $fontheader;
+        }
+        p {
+          font-size: $fontdesc;
+        }
+      }
+      #project {
+        margin: 20px 0;
+        .item-project {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .item-self {
+            width: 170px;
+            height: 170px;
+            .contoh {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// for  small screen with minimum width of 768px (tablet)
+@media only screen and (min-width: 768px) {
+  //CSS for tablets here
+  p {
+    font-size: 19px;
+  }
+}

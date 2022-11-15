@@ -1,0 +1,22 @@
+$primary-color: #191929;
+$navfontcolor: #d8d8b9;
+$fontcolor: #d8d8b9;
+
+body.light{
+    background-color: $fontcolor;
+    color: $primary-color;
+    scroll-behavior: smooth;
+    nav{
+        .bar{
+            background: $primary-color;
+        }
+        ul{
+            li{
+                a{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+

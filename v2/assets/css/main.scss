@@ -1,0 +1,228 @@
+@import "_mixin";
+
+$primary-color: #191929;
+$navfontcolor: #d8d8b9;
+$fontcolor: #d8d8b9;
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+body {
+  background-color: $primary-color;
+  scroll-behavior: smooth;
+  color: $fontcolor;
+}
+header {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    .logo {
+      margin-left: 50px;
+      margin-top: 10px;
+      width: 4vh;
+      height: 5vh;
+    }
+    ul {
+      margin-right: 50px;
+      margin-top: 20px;
+      li {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        a {
+          font-size: 20px;
+          margin: 0 50px;
+          text-decoration: none;
+          font-weight: 800;
+          width: 58px;
+          height: 24px;
+          left: 843px;
+          top: 44px;
+          line-height: 24px;
+          color: $navfontcolor;
+        }
+      }
+    }
+    .hamburger{
+      display: none;
+    }
+  }
+}
+
+main {
+  .jumbotron {
+    display: flex;
+    @include Posisi();
+    .main-text {
+      width: 100%;
+      margin-bottom: 50px;
+      h2 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1.25em;
+      }
+    }
+
+    .main-img {
+      img {
+        position: relative;
+        // margin-top: 50px;
+        height: 326px;
+        width: 361px;
+        z-index: -1;
+        right: 20px;
+        filter: blur(4px);
+      }
+    }
+  }
+  .about {
+    @include Posisi();
+    .main-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      p {
+        text-align: justify;
+      }
+    }
+  }
+  #project {
+    @include Posisi();
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
+    hr {
+      width: 70%;
+      margin: 0 auto;
+    }
+    .item-project {
+      display: flex;
+      justify-content: center;
+      // flex-direction: row;
+      // width: 900px;
+      
+      .item-self {
+        position: relative;
+        width: 200px;
+        margin: 30px;
+        .contoh{
+          width: 100%;
+          height: 100%;
+          border: solid 1px white;
+          background-color: red;
+        }
+        .imageproject {
+          display: block;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          transform: translateY(-100%);
+          transition: all 1s;
+          filter: blur(5px);
+        }
+        .imageproject.show{
+          opacity: 1;
+          transition: all 1s;
+          filter: blur(0);
+          transform: translateY(0);
+        }
+        .overlay:hover {
+          opacity: 1;
+        }
+        .overlay:hover > * {
+          transform: translateY(0);
+        }
+        .overlay > * {
+          transform: translateY(28px);
+          transition: transform 0.25s;
+        }
+        .overlay {
+          @include overlayprojectsuit();
+
+          .image-title {
+            font-size: 2em;
+            font-weight: bold;
+          }
+          .image-description {
+            font-size: 1.25em;
+            margin-top: 0.25em;
+          }
+        }
+      }
+    }
+  }
+  #skill{
+    @include Posisi();
+    
+    .spesialist{
+      display: flex;
+      margin: 0 40px;
+      gap: 25px;
+      .icon-skill{
+        max-width: 80px;
+        max-height: 80px;
+        margin: 30px 50px;
+      }
+      .barside{
+        // border: white solid 1px;
+        width: 100%;
+        h2{
+          margin-top: 8px;
+        }
+        .spacebar{
+          margin-top: 8px;
+          width: 100%;
+          height: 20px;
+          border-radius: 15px;
+          background-color: gray;
+          overflow: hidden;
+       
+          .fillbar{
+            width: 70%;
+            height: 100%;
+            border-radius: 0 15px 15px 0;
+            background-color: red;
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateX(-100%);
+            transition: all 1.3s;
+            p{
+              position: relative;
+              text-align: right;
+              padding-top: -40px;
+              height: 110%;
+              // height: 60%;
+              padding-bottom: 10px;
+              margin-right: 10px;
+              font-size: 15px;
+            }
+          }
+          .show{
+            opacity: 1;
+            filter: blur(0);
+            transform: translateX(0);
+          }
+        }
+      }
+    }
+  }
+}
+

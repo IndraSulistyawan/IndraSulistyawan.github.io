@@ -1,0 +1,11 @@
+body.light {
+  background-color: #d8d8b9;
+  color: #191929;
+  scroll-behavior: smooth;
+}
+body.light nav .bar {
+  background: #191929;
+}
+body.light nav ul li a {
+  color: #191929;
+}/*# sourceMappingURL=light.css.map */
