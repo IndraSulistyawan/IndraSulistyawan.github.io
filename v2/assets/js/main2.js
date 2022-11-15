@@ -145,9 +145,10 @@ const textPersenGit = setInterval(() => {
 
 
 function sendMail() {
-  var link = "mailto:indrasulistyawanne@gmail.com"
-           + "&subject=" + encodeURIComponent("Ini Subjek")
-           + "&body=" + encodeURIComponent(document.getElementById('sms').value)
+  var link = "mailto:me@example.com"
+           + "?cc=myCCaddress@example.com"
+           + "&subject=" + encodeURIComponent("This is my subject")
+           + "&body=" + encodeURIComponent(document.getElementById('myText').value)
   ;
   
   window.location.href = link;
