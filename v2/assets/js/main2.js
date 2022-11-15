@@ -144,5 +144,12 @@ const textPersenGit = setInterval(() => {
 }, 20);
 
 
-
-
+function sendMail() {
+  var link = "mailto:indrasulistyawanne@gmail.com"
+           + "?cc=myCCaddress@gmail.com"
+           + "&subject=" + encodeURIComponent("This is my subject")
+           + "&body=" + encodeURIComponent(document.getElementById('sms').value)
+  ;
+  
+  window.location.href = link;
+}
