@@ -145,9 +145,9 @@ const textPersenGit = setInterval(() => {
 
 
 function sendMail() {
-  var link = "mailto:indrasulistyawan@gmail.com"
+  var link = "mailto:indrasulistyawanne@gmail.com"
           //  + "?cc=myCCaddress@example.com"
-           + "?subject=" + encodeURIComponent(document.getElementById('subjek').value)
+           + "?subject=" + encodeURIComponent("From " + document.getElementById('subjek').value)
            + "&body=" + encodeURIComponent(document.getElementById('sms').value)
   ;
   
