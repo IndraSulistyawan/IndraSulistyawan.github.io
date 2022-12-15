@@ -63,8 +63,10 @@ main .jumbotron .main-text {
   width: 100%;
   margin-bottom: 50px;
 }
-main .jumbotron .main-text h2 {
-  font-size: 2em;
+main .jumbotron .main-text .header {
+  text-align: left;
+  margin: 20px 0;
+  font-size: 2.4rem;
 }
 main .jumbotron .main-text p {
   font-size: 1.25em;
@@ -87,7 +89,8 @@ main .about .main-text {
 }
 main .about .main-text h1 {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px 0;
+  font-size: 2.4rem;
 }
 main .about .main-text p {
   text-align: justify;
@@ -95,9 +98,10 @@ main .about .main-text p {
 main #project {
   margin: 70px 120px;
 }
-main #project h1 {
+main #project .header {
   text-align: center;
   margin: 20px 0;
+  font-size: 2.4rem;
 }
 main #project hr {
   width: 70%;
@@ -169,6 +173,11 @@ main #project .item-project .item-self .overlay .image-description {
 main #skill {
   margin: 70px 120px;
 }
+main #skill .header {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.4rem;
+}
 main #skill .spesialist {
   display: flex;
   margin: 0 40px;
@@ -218,22 +227,20 @@ main #skill .spesialist .barside .spacebar .show {
   transform: translateX(0);
 }
 main #contact {
-  margin-top: -10px;
-  margin-bottom: -10px;
   font-family: "Poppins", sans-serif;
 }
 main #contact .kontek {
   display: flex;
+  margin: 70px 120px;
   flex-direction: column;
 }
-main #contact .kontek h2 {
+main #contact .kontek .header {
   text-align: center;
   margin: 20px 0;
   font-size: 2.4rem;
-  color: white;
 }
 main #contact .kontek .massage {
-  margin-left: 180px;
+  margin: 70px 120px;
 }
 main #contact .kontek .massage .forse {
   margin-top: 15px;
