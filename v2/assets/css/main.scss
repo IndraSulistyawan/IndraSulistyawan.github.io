@@ -70,7 +70,7 @@ main {
     .main-text {
       width: 100%;
       margin-bottom: 50px;
-      .header {
+      .header{
         text-align: left;
         margin: 20px 0;
         font-size: $fontsize-header;
@@ -98,7 +98,7 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      h1 {
+      .header{
         text-align: center;
         margin: 20px 0;
         font-size: $fontsize-header;
@@ -110,10 +110,10 @@ main {
   }
   #project {
     @include Posisi();
-    .header {
+    .header{
       text-align: center;
       margin: 20px 0;
-      font-size: $fontsize-header;
+      font-size: 2.4rem;
     }
     hr {
       width: 70%;
@@ -177,6 +177,9 @@ main {
   }
   #skill {
     @include Posisi();
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .header{
       text-align: center;
         margin: 20px 0;
@@ -194,8 +197,10 @@ main {
       .barside {
         // border: white solid 1px;
         width: 100%;
-        h2 {
-          margin-top: 8px;
+        .header {
+          text-align: center;
+        margin: 20px 0;
+        font-size: $fontsize-header;
         }
         .spacebar {
           margin-top: 8px;
@@ -235,19 +240,24 @@ main {
     }
   }
   #contact {
+    margin-top: -10px;
+    margin-bottom: -10px;
     font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     // background-color: $contact-color;
     .kontek {
       display: flex;
-      @include Posisi();
       flex-direction: column;
+      
       .header {
         text-align: center;
         margin: 20px 0;
         font-size: $fontsize-header;
       }
       .massage {
-        @include Posisi();
+        margin-left: 200px;
         .forse {
           margin-top: 15px;
           .label {

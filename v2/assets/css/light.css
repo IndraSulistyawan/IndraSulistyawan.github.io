@@ -8,4 +8,8 @@ body.light nav .bar {
 }
 body.light nav ul li a {
   color: #191929;
+}
+body.light #contact .kontek .massage button {
+  border: 3px solid #191929;
+  color: #191929;
 }/*# sourceMappingURL=light.css.map */

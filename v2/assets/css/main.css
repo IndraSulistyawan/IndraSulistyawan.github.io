@@ -87,7 +87,7 @@ main .about .main-text {
   flex-direction: column;
   justify-content: center;
 }
-main .about .main-text h1 {
+main .about .main-text .header {
   text-align: center;
   margin: 20px 0;
   font-size: 2.4rem;
@@ -172,6 +172,9 @@ main #project .item-project .item-self .overlay .image-description {
 }
 main #skill {
   margin: 70px 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 main #skill .header {
   text-align: center;
@@ -191,8 +194,10 @@ main #skill .spesialist .icon-skill {
 main #skill .spesialist .barside {
   width: 100%;
 }
-main #skill .spesialist .barside h2 {
-  margin-top: 8px;
+main #skill .spesialist .barside .header {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.4rem;
 }
 main #skill .spesialist .barside .spacebar {
   margin-top: 8px;
@@ -227,11 +232,15 @@ main #skill .spesialist .barside .spacebar .show {
   transform: translateX(0);
 }
 main #contact {
+  margin-top: -10px;
+  margin-bottom: -10px;
   font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 main #contact .kontek {
   display: flex;
-  margin: 70px 120px;
   flex-direction: column;
 }
 main #contact .kontek .header {
@@ -240,7 +249,7 @@ main #contact .kontek .header {
   font-size: 2.4rem;
 }
 main #contact .kontek .massage {
-  margin: 70px 120px;
+  margin-left: 200px;
 }
 main #contact .kontek .massage .forse {
   margin-top: 15px;

@@ -18,5 +18,16 @@ body.light{
             }
         }
     }
+    #contact{
+        .kontek{
+            .massage{
+
+                button{
+                    border: 3px solid $primary-color;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
 }
 
