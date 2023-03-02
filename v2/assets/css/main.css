@@ -93,9 +93,11 @@ main .about .main-text .header {
   font-size: 2.4rem;
 }
 main .about .main-text p {
-  text-align: justify;
+  text-align: center;
 }
 main #project {
+  display: flex;
+  flex-direction: column;
   margin: 70px 120px;
 }
 main #project .header {

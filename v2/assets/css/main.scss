@@ -104,12 +104,13 @@ main {
         font-size: $fontsize-header;
       }
       p {
-        text-align: justify;
+        text-align: center;
       }
     }
   }
   #project {
     display: flex;
+    flex-direction: column;
     @include Posisi();
     .header{
       text-align: center;
