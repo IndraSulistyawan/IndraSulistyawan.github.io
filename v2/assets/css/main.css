@@ -250,6 +250,19 @@ main #contact .kontek .header {
   margin: 20px 0;
   font-size: 2.4rem;
 }
+main #contact .kontek .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #contact .kontek .icon ul {
+  width: 30%;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
 main #contact .kontek .massage {
   margin-left: 200px;
 }

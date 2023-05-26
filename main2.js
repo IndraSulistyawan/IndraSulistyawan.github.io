@@ -3,6 +3,12 @@ const switchbtn = document.querySelector(".switch-btn");
 const circlebtn = document.querySelector(".circle");
 const body = document.body;
 
+const iconElements = document.querySelectorAll('.icon [color]');
+
+
+
+
+
 switchbtn.addEventListener("click", () => {
   switchbtn.classList.toggle("mode");
   circlebtn.classList.toggle("mode");
@@ -11,6 +17,32 @@ switchbtn.addEventListener("click", () => {
 
 function switchMode() {
   body.classList.toggle("light");
+  if (sideBar.classList.contains("active")) {
+    hamburger.style.position = "absolute";
+    console.log("sidebar active");
+  } else {
+    console.log("sidebar nonaktif");
+  }
+
+  if (body.classList.contains("light")) {
+    switchbtn.classList.add("mode");
+    circlebtn.classList.add("mode");
+    iconskill[0].src = "assets/img/html-dark.png";
+    iconskill[1].src = "assets/img/css-dark.png";
+    iconskill[2].src = "assets/img/java-script-dark.png";
+    iconskill[3].src = "assets/img/git-dark.png";
+    
+  } else {
+    switchbtn.classList.remove("mode");
+    circlebtn.classList.remove("mode");
+    iconskill[0].src = "assets/img/html-light.png";
+    iconskill[1].src = "assets/img/css-light.png";
+    iconskill[2].src = "assets/img/java-script-light.png";
+    iconskill[3].src = "assets/img/git-light.png";
+   
+  }
+ 
+  switchDarkModeLocalStorage();
 }
 
 const hamburger = document.querySelector(".hamburger");
@@ -31,31 +63,6 @@ hamburger.onclick = function () {
 
 const iconskill = document.querySelectorAll(".icon-skill");
 
-setInterval(() => {
-  if (sideBar.classList.contains("active")) {
-    hamburger.style.position = "absolute";
-    console.log("sidebar active");
-  } else {
-    console.log("sidebar nonaktif");
-  }
-
-  if (body.classList.contains("light")) {
-    switchbtn.classList.add("mode");
-    circlebtn.classList.add("mode");
-    iconskill[0].src = "assets/img/html-dark.png";
-    iconskill[1].src = "assets/img/css-dark.png";
-    iconskill[2].src = "assets/img/java-script-dark.png";
-    iconskill[3].src = "assets/img/git-dark.png";
-  } else {
-    switchbtn.classList.remove("mode");
-    circlebtn.classList.remove("mode");
-    iconskill[0].src = "assets/img/html-light.png";
-    iconskill[1].src = "assets/img/css-light.png";
-    iconskill[2].src = "assets/img/java-script-light.png";
-    iconskill[3].src = "assets/img/git-light.png";
-  }
-  switchDarkModeLocalStorage();
-}, 300);
 
 //web storage
 function switchDarkModeLocalStorage() {
@@ -153,4 +160,7 @@ function sendMail() {
   
   window.location.href = link;
 }
-//just for some test
+
+
+//direct sosial media
+

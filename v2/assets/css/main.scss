@@ -258,6 +258,21 @@ main {
         margin: 20px 0;
         font-size: $fontsize-header;
       }
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ul{
+          width: 30%;
+          display: flex;
+          list-style: none;
+          align-items: center;
+          justify-content: center;
+          gap: 30px;
+        
+      }
+      }
       .massage {
         margin-left: 200px;
         .forse {
