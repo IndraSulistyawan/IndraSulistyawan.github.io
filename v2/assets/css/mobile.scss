@@ -153,6 +153,22 @@ $fontcolor: #d8d8b9;
           }
         }
       }
+      #design{
+        display: flex;
+        flex-direction: column;
+        ul {
+          margin-right: 30%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          flex-direction: column;
+        }
+      
+        li {
+          width: 100%;
+        
+      }
+      }
       #skill {
         margin: 60px auto;
         .spesialist {

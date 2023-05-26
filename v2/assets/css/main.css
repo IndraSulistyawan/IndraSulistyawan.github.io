@@ -172,6 +172,45 @@ main #project .item-project .item-self .overlay .image-description {
   font-size: 1.25em;
   margin-top: 0.25em;
 }
+main #design {
+  display: grid;
+  margin: 70px 120px;
+}
+main #design .header {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.4rem;
+}
+main #design hr {
+  width: 70%;
+  margin: 0 auto;
+}
+main #design ul {
+  width: 70%;
+  margin-top: 20px;
+  margin-left: 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.9fr 0.9fr;
+  gap: 20px 20px;
+  justify-items: center;
+}
+main #design ul li {
+  list-style: none;
+}
+main #design ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  max-width: 100%;
+}
+main #design ul li a img {
+  width: 70%;
+  height: auto;
+  display: block;
+}
 main #skill {
   margin: 70px 120px;
   display: flex;
